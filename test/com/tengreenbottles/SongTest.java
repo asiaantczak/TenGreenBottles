@@ -1,16 +1,22 @@
 package com.tengreenbottles;
 
-
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 
 public class SongTest {
 
+
     @Test
-    public void returnTheSongForTenBottles() {
+     public void printsFirstStanzaForTenBottles() {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
         Song song = new Song();
-        String lyrics = "Ten green bottles\n" +
+        song.play(10);
+        String stanza = "Ten green bottles\n" +
                 "Hanging on the wall\n" +
                 "Ten green bottles\n" +
                 "Hanging on the wall\n" +
@@ -18,6 +24,9 @@ public class SongTest {
                 "Should accidentally fall\n" +
                 "There'll be nine green bottles\n" +
                 "Hanging on the wall";
-        assertEquals(lyrics, song.play());
+        Assertions.assertEquals(stanza, outContent.toString());
     }
+
+
+
 }
