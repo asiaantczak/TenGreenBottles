@@ -7,7 +7,14 @@ public class Song {
         String verset1 = " green bottles\n" + "Hanging on the wall\n";
         String verset2 = "And if one green bottle\n" + "Should accidentally fall\n";
         String verset3 = "There'll be ";
-        String verset4 = " green bottles\n" + "Hanging on the wall";
+        String verset4;
+
+        if (num > 2) {
+            verset4 = " green bottles\n" + "Hanging on the wall";
+        } else {
+            verset4 = " green bottle\n" + "Hanging on the wall";
+        }
+
 
 
         System.out.print(bottles[num-1] + verset1 + bottles[num-1] + verset1 + verset2 + verset3 + bottles[num - 2].toLowerCase() + verset4);

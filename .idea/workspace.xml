@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a32e7e1b-de7e-4a72-9cd0-ae61e4af0242" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TenGreenBottles/com/tengreenbottles/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TenGreenBottles/com/tengreenbottles/Song.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TenGreenBottles/com/tengreenbottles/SongTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TenGreenBottles/com/tengreenbottles/SongTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TenGreenBottles/com/tengreenbottles/Song.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tengreenbottles/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tengreenbottles/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tengreenbottles/SongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tengreenbottles/SongTest.java" afterDir="false" />
     </list>
@@ -37,8 +35,8 @@
       <file leaf-file-name="Song.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tengreenbottles/Song.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="135">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -46,8 +44,8 @@
       <file leaf-file-name="SongTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/tengreenbottles/SongTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="280">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,10 +75,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-50" />
-    <option name="y" value="959" />
     <option name="width" value="1280" />
-    <option name="height" value="712" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,6 +206,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="SongTest.printsStanzaForTwoBottlesAndOneLeftAtTheEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TenGreenBottles" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tengreenbottles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tengreenbottles" />
+      <option name="MAIN_CLASS_NAME" value="com.tengreenbottles.SongTest" />
+      <option name="METHOD_NAME" value="printsStanzaForTwoBottlesAndOneLeftAtTheEnd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="SongTest.returnTheSongForTenBottles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TenGreenBottles" />
       <extension name="coverage">
@@ -238,10 +257,12 @@
       <item itemvalue="JUnit.SongTest" />
       <item itemvalue="JUnit.SongTest.returnTheSongForTenBottles" />
       <item itemvalue="JUnit.SongTest.printsFirstStanzaForTenBottles" />
+      <item itemvalue="JUnit.SongTest.printsStanzaForTwoBottlesAndOneLeftAtTheEnd" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SongTest.printsFirstStanzaForTenBottles" />
+        <item itemvalue="JUnit.SongTest.printsStanzaForTwoBottlesAndOneLeftAtTheEnd" />
         <item itemvalue="JUnit.SongTest" />
         <item itemvalue="JUnit.SongTest.returnTheSongForTenBottles" />
       </list>
@@ -261,12 +282,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SongTest_printsFirstStanzaForTenBottles - 2018.08.16 at 16h 39m 56s.xml">
-      <configuration name="SongTest.printsFirstStanzaForTenBottles" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SongTest_printsFirstStanzaForTenBottles - 2018.08.16 at 16h 42m 00s.xml">
-      <configuration name="SongTest.printsFirstStanzaForTenBottles" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SongTest_printsFirstStanzaForTenBottles - 2018.08.16 at 16h 46m 15s.xml">
       <configuration name="SongTest.printsFirstStanzaForTenBottles" configurationId="JUnit" />
     </history-entry>
@@ -291,25 +306,31 @@
     <history-entry file="SongTest_printsFirstStanzaForTenBottles - 2018.08.16 at 16h 59m 06s.xml">
       <configuration name="SongTest.printsFirstStanzaForTenBottles" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SongTest_printsFirstStanzaForTenBottles - 2018.08.17 at 11h 48m 47s.xml">
+      <configuration name="SongTest.printsFirstStanzaForTenBottles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SongTest_printsStanzaForTwoBottlesAndOneLeftAtTheEnd - 2018.08.17 at 11h 48m 55s.xml">
+      <configuration name="SongTest.printsStanzaForTwoBottlesAndOneLeftAtTheEnd" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-320" y="800" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.3972311" weight="0.3288889" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.39256865" visible="true" weight="0.32827586" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5063898" side_tool="true" visible="true" weight="0.3288889" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.60743135" side_tool="true" visible="true" weight="0.32827586" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49361023" visible="true" weight="0.3288889" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49353796" weight="0.5103448" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1682641" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2552504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -326,6 +347,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -464,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/tengreenbottles/SongTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="280">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,8 +500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tengreenbottles/Song.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
