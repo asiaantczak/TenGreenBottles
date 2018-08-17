@@ -1,6 +1,7 @@
 package com.tengreenbottles;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -9,11 +10,18 @@ import java.io.PrintStream;
 
 public class SongTest {
 
+    ByteArrayOutputStream outContent;
+    Song song;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        song = new Song();
+    }
+
     @Test
      public void printsFirstStanzaForTenBottles() {
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outContent));
-        Song song = new Song();
         song.play(10);
         String stanza = "Ten green bottles\n" +
                 "Hanging on the wall\n" +
@@ -29,9 +37,6 @@ public class SongTest {
 
     @Test
      public void printsStanzaForTwoBottlesAndOneLeftAtTheEnd() {
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outContent));
-        Song song = new Song();
         song.play(2);
         String stanza = "Two green bottles\n" +
                 "Hanging on the wall\n" +
@@ -47,9 +52,6 @@ public class SongTest {
 
     @Test
     public void printLastStanzaForOneBottle() {
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outContent));
-        Song song = new Song();
         song.play(1);
         String stanza = "One green bottle\n" +
                 "Hanging on the wall\n" +
@@ -64,9 +66,6 @@ public class SongTest {
 
     @Test
     public void printsAll10Stanzas() {
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outContent));
-        Song song = new Song();
         for(int i = 10; i > 0; i--) {
             song.play(i);
         }
