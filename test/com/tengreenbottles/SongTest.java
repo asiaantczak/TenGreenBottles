@@ -22,7 +22,8 @@ public class SongTest {
                 "And if one green bottle\n" +
                 "Should accidentally fall\n" +
                 "There'll be nine green bottles\n" +
-                "Hanging on the wall";
+                "Hanging on the wall\n" +
+                "\n";
         Assertions.assertEquals(stanza, outContent.toString());
     }
 
@@ -38,8 +39,9 @@ public class SongTest {
                 "Hanging on the wall\n" +
                 "And if one green bottle\n" +
                 "Should accidentally fall\n" +
-                "There'll be one green bottle\n" +
-                "Hanging on the wall";
+                "There'll be one green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n";
         Assertions.assertEquals(stanza, outContent.toString());
     }
 
@@ -49,15 +51,114 @@ public class SongTest {
         System.setOut(new PrintStream(outContent));
         Song song = new Song();
         song.play(1);
-        String stanza = "One green bottles\n" +
+        String stanza = "One green bottle\n" +
                 "Hanging on the wall\n" +
-                "One green bottles\n" +
+                "One green bottle\n" +
                 "Hanging on the wall\n" +
-                "And if one green bottle\n" +
+                "If that one green bottle\n" +
                 "Should accidentally fall\n" +
                 "There'll be no green bottles\n" +
-                "Hanging on the wall";
+                "Hanging on the wall\n";
         Assertions.assertEquals(stanza, outContent.toString());
     }
 
+    @Test
+    public void printsAll10Stanzas() {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        Song song = new Song();
+        for(int i = 10; i > 0; i--) {
+            song.play(i);
+        }
+        String lyrics = "Ten green bottles\n" +
+                "Hanging on the wall\n" +
+                "Ten green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be nine green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Nine green bottles\n" +
+                "Hanging on the wall\n" +
+                "Nine green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be eight green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Eight green bottles\n" +
+                "Hanging on the wall\n" +
+                "Eight green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be seven green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Seven green bottles\n" +
+                "Hanging on the wall\n" +
+                "Seven green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be six green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Six green bottles\n" +
+                "Hanging on the wall\n" +
+                "Six green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be five green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Five green bottles\n" +
+                "Hanging on the wall\n" +
+                "Five green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be four green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Four green bottles\n" +
+                "Hanging on the wall\n" +
+                "Four green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be three green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Three green bottles\n" +
+                "Hanging on the wall\n" +
+                "Three green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be two green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "Two green bottles\n" +
+                "Hanging on the wall\n" +
+                "Two green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be one green bottles\n" +
+                "Hanging on the wall\n" +
+                "\n" +
+                "One green bottle\n" +
+                "Hanging on the wall\n" +
+                "One green bottle\n" +
+                "Hanging on the wall\n" +
+                "If that one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be no green bottles\n" +
+                "Hanging on the wall\n";
+        Assertions.assertEquals(lyrics, outContent.toString());
+    }
 }
