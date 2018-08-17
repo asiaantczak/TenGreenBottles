@@ -9,15 +9,18 @@ public class Song {
         String verset3 = "There'll be ";
         String verset4;
 
-        if (num > 2) {
+
+        if (num > 2 || num == 1){
             verset4 = " green bottles\n" + "Hanging on the wall";
         } else {
             verset4 = " green bottle\n" + "Hanging on the wall";
         }
 
-
-
-        System.out.print(bottles[num-1] + verset1 + bottles[num-1] + verset1 + verset2 + verset3 + bottles[num - 2].toLowerCase() + verset4);
+        if (num > 1) {
+            System.out.print(bottles[num-1] + verset1 + bottles[num-1] + verset1 + verset2 + verset3 + bottles[num - 2].toLowerCase() + verset4);
+        } else {
+            System.out.print(bottles[num-1] + verset1 + bottles[num-1] + verset1 + verset2 + verset3 + "no" + verset4);
+        }
     }
 
 //    public static void main(String[] args) {

@@ -43,8 +43,21 @@ public class SongTest {
         Assertions.assertEquals(stanza, outContent.toString());
     }
 
-    
-
-
+    @Test
+    public void printLastStanzaForOneBottle() {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        Song song = new Song();
+        song.play(1);
+        String stanza = "One green bottles\n" +
+                "Hanging on the wall\n" +
+                "One green bottles\n" +
+                "Hanging on the wall\n" +
+                "And if one green bottle\n" +
+                "Should accidentally fall\n" +
+                "There'll be no green bottles\n" +
+                "Hanging on the wall";
+        Assertions.assertEquals(stanza, outContent.toString());
+    }
 
 }
